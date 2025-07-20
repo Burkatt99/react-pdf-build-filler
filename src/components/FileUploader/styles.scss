@@ -1,0 +1,92 @@
+@import "@/constants/styles.css";
+
+.FileUploader__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.FileUploader__dnd-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.FileUploader__dnd-container {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px 24px;
+  border: 2px dashed var(--border-default);
+  text-align: center;
+  border-radius: 8px;
+  flex: 1 1 auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  :hover {
+    border-color: var(--border-hovered);
+  }
+
+  &--has-files {
+    height: auto;
+  }
+
+  &--disabled {
+    opacity: 0.8;
+    cursor: no-drop;
+  }
+
+  &--drag-active {
+    border-color: var(--border-focused);
+    cursor: grab;
+  }
+}
+
+.FileUploader__upload-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.FileUploader__upload-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.FileUploader__upload-title {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.FileUploader__upload-size {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.FileUploader__accent-text {
+  color: var(--text-accent);
+}
+
+.FileUploader__upload-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    color: var(--icon-default);
+  }
+}
+
+.FileUploader__error-block {
+  min-height: 16px;
+  color: var(--text-danger);
+}

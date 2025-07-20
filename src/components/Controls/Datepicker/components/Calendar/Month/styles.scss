@@ -1,0 +1,62 @@
+@import "@/constants/styles.css";
+
+.Calendar__weekdays-wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
+  grid-row-gap: 4px;
+}
+
+.Calendar__day-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.Calendar__day-label-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.Calendar__month-container {
+  height: 100%;
+}
+
+.Calendar__month-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.Calendar__month-button {
+  color: var(--text-primary);
+}
+
+.Calendar__month-label-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4px;
+}
+
+.Calendar__month-label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text-primary);
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}

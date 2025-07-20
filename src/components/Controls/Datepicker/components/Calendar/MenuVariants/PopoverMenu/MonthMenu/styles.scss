@@ -1,0 +1,23 @@
+@import "@/constants/styles.css";
+
+.PopoverMenu__month-container {
+  width: 299px;
+}
+
+.PopoverMenu__month-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  min-height: 40px;
+  padding: 8px 0;
+  color: var(--text-primary);
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.PopoverMenu__month-title-container {
+  text-align: center;
+  padding-bottom: 12px;
+}

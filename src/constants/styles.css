@@ -1,0 +1,79 @@
+
+:root {
+  /* --- BACKGROUND --- */
+  --white: #ffffff;
+  --background-list: #eceff2;
+  --background-accent-default: #3d8bfd;
+  --background-accent-hovered: #3d8bfd;
+  --background-accent-pressed: #3d8bfd;
+  --background-accent-disabled: #cfe2ff;
+
+  --background-warning-default: #ffe5d0;
+  --background-warning-hovered: #fecba1;
+  --background-warning-pressed: #fecba1;
+
+  --background-danger-default: #e35d6a;
+  --background-danger-hovered: #e35d6a;
+  --background-danger-pressed: #e35d6a;
+  --background-danger-drop: #f8d7da;
+  --background-danger-drop-hovered: #f1aeb5;
+
+  --background-neutral-default: #ffffff;
+  --background-neutral-hovered: #dee2e6;
+  --background-neutral-pressed: #dee2e6;
+
+  --background-neutral-variant-default: #ced4da;
+  --background-neutral-variant-hovered: #adb5bd;
+  --background-neutral-variant-pressed: #adb5bd;
+
+  --background-success-default: #198754;
+  --background-input-default: #fff;
+  --background-disabled-default: #adb5bd;
+  --background-tooltip-default: #6c757d;
+  /* --- END BACKGROUND --- */
+
+  /* --- TEXT --- */
+  --text-primary: #000;
+  --text-secondary: #73768c;
+  --text-accent: #0d6efd;
+  --text-warning: #fd7e14;
+  --text-danger: #dc3545;
+  --text-disabled: #495057;
+  --text-success: #198754;
+  /* --- END TEXT --- */
+
+  /* --- ICONS --- */
+  --icon-accent: #0d6efd;
+  --icon-default: #6c757d;
+  --icon-success: #198754;
+  --icon-danger: #dc3545;
+  --icon-warning: #fd7e14;
+  --icon-disabled: #adb5bd;
+  /* --- END ICONS --- */
+
+  /* --- STATE COLORS --- */
+  --state-colors-success: #46be8a;
+  --state-colors-info: #0190da;
+  --state-colors-none: #9b9b9b;
+  --state-colors-warning: #f39834;
+  --state-colors-danger: #fb434a;
+  --state-colors-content: #ffffff;
+  /* --- END STATE COLORS --- */
+
+  /* --- BORDER --- */
+  --border-default: #ced4da;
+  --border-input: #ced4da;
+  --border-accent: #0d6efd;
+  --border-hovered: #b1bbc4;
+  --border-focused: #0d6efd;
+  --border-warning: #fd7e14;
+  --border-danger: #dc3545;
+  --border-disabled: #e9ecef;
+  --border-tooltip: #6c757d;
+  /* --- END BORDER --- */
+
+  /* --- SHADOW --- */
+  --shadow-default: 0px 0px 1px 0px rgba(0, 0, 0, 0.20), 0px 3px 8px 0px rgba(0, 0, 0, 0.05);
+  --shadow-tooltip: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  /* --- END SHADOW --- */
+}

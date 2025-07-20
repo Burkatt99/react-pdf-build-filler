@@ -1,0 +1,70 @@
+@import "@/constants/styles.css";
+
+.FieldsColumn__container {
+  position: relative;
+  flex: 0 0 220px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.FieldsColumn__remove-helper {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--text-secondary);
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+
+  &--moving {
+    opacity: 1;
+    visibility: visible;
+    background: var(--background-danger-drop);
+    border: 1px dashed var(--border-danger);
+  }
+
+  &--over {
+    background: var(--background-danger-drop-hovered);
+    border: 1px solid var(--border-danger);
+  }
+}
+
+.FieldsColumn__title {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: start;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.FieldsColumn__fields-list {
+  position: relative;
+  flex: 0 0 220px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & > *:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  &--moving {
+    opacity: 0;
+    visibility: visible;
+  }
+};
+

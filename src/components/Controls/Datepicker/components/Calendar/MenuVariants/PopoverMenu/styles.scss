@@ -1,0 +1,19 @@
+@import "@/constants/styles.css";
+
+.PopoverMenu__container {
+  display: flex;
+  column-gap: 16px;
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+
+.PopoverMenu__open-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

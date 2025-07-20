@@ -1,0 +1,44 @@
+@import "@/constants/styles.css";
+
+.PopoverMenu__list-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px 8px;
+}
+
+.PopoverMenu__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 4px;
+  color: var(--text-primary);
+  background-color: var(--white);
+  border: 1px solid var(--border-default);
+  box-shadow: var(--shadow-default);
+  cursor: pointer;
+  font-family: inherit;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: auto;
+
+  &::first-letter {
+    text-transform: capitalize;
+  }
+
+  &--selected {
+    color: var(--white);
+    border: 1px solid var(--border-focused);
+    background-color: var(--background-accent-default);
+  }
+}
+
+.PopoverMenu__list-label {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

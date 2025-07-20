@@ -1,0 +1,57 @@
+@import "@/constants/styles.css";
+
+.PdfForm__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 260px;
+  min-width: 260px;
+  height: inherit;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border-radius: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    min-height: 64px;
+    height: 4px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    background-clip: padding-box;
+    background-color: var(--background-neutral-variant-default);
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+.PdfForm__content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.PdfForm__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.PdfForm__footer-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}

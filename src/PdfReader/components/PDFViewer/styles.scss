@@ -1,0 +1,9 @@
+.PDFViewer__block {
+  height: inherit;
+  width: calc(100% - 276px);
+  min-width: 460px;
+
+  [aria-describedby="rpv-core__tooltip-body-toolbar-more-actions"] {
+    display: none;
+  }
+}

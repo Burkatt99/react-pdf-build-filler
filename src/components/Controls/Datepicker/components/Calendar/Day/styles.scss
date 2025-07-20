@@ -1,0 +1,119 @@
+@import "@/constants/styles.css";
+
+.Calendar__day-container {
+  position: relative;
+  height: 40px;
+  width: 40px;
+}
+
+.Calendar__day {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  color: var(--text-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+
+  &--current {
+    border: 1px solid var(--border-focused);
+  }
+
+  &--disabled {
+    color: var(--text-secondary);
+    cursor: default;
+  }
+
+  &--selectedStart,
+  &--selectedEnd {
+    background-color: var(--background-accent-default);
+    color: var(--white);
+    font-weight: 500;
+  }
+
+  &--selected,
+  &--hovered {
+    background-color: var(--background-accent-disabled);
+  }
+
+  &--currentHover {
+    &:hover {
+      background-color: var(--background-accent-disabled);
+    }
+  }
+
+  &--selected {
+    color: var(--white);
+  }
+}
+
+.Calendar__day-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+
+  &--selectedStart {
+    background-color: var(--background-accent-disabled);
+    border-radius: 50% 0 0 50%;
+  }
+
+  &--hoveredStart {
+    border-top: 1px dashed var(--border-default);
+    border-bottom: 1px dashed var(--border-default);
+    border-radius: 50% 0 0 50%;
+  }
+
+  &--selectedEnd {
+    background-color: var(--background-accent-disabled);
+    border-radius: 0 50% 50% 0;
+  }
+
+  &--selected {
+    background-color: var(--background-accent-disabled);
+  }
+
+  &--hovered {
+    border-top: 1px dashed var(--border-default);
+    border-bottom: 1px dashed var(--border-default);
+    width: 30%;
+  }
+
+  &--hoveredRange {
+    border-top: 1px dashed var(--border-default);
+    border-bottom: 1px dashed var(--border-default);
+  }
+  
+  &--selectedFirstOfWeek {
+    background-color: var(--background-accent-disabled);
+    border-radius: 50% 0 0 50%;
+  }
+
+  &--selectedLastOfWeek {
+    background-color: var(--background-accent-disabled);
+    border-radius: 0 50% 50% 0;
+  }
+
+  &--hoveredRangeFirstOfWeek {
+    border-top: 1px dashed var(--border-default);
+    border-bottom: 1px dashed var(--border-default);
+    border-left: 1px dashed var(--border-default);
+    border-radius: 50% 0 0 50%;
+  }
+
+  &--hoveredRangeLastOfWeek {
+    border-top: 1px dashed var(--border-default);
+    border-bottom: 1px dashed var(--border-default);
+    border-right: 1px dashed var(--border-default);
+    border-radius: 0 50% 50% 0;
+  }
+}

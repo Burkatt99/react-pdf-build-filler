@@ -1,0 +1,24 @@
+.SortableList__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  max-height: calc(100% + 20px);
+  overflow:  visible;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &--withContent {
+    min-width: min-content;
+  }
+
+  &--overflow {
+    padding: 20px;
+    margin: -20px;
+    overflow: auto;
+  }
+}

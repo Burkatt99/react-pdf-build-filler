@@ -1,0 +1,80 @@
+@import "@/constants/styles.css";
+
+@mixin page-button-wrapper {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  bottom: 45%;
+  right: 10px;
+  max-width: 40px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.PdfViewer__block {
+  height: inherit;
+  width: "100%";
+  min-width: 460px;
+  overflow: hidden;
+
+  [aria-describedby="rpv-core__tooltip-body-toolbar-more-actions"] {
+    display: none;
+  }
+}
+
+.PdfViewer__next-page {
+  @include page-button-wrapper();
+}
+
+.PdfViewer__prev-page {
+  @include page-button-wrapper();
+  left: 10px;
+}
+
+.PdfViewer__page-button {
+  background: var(--background-accent-default);
+
+  &:hover {
+    background: var(--background-accent-hovered);
+  }
+
+  &:active {
+    background: var(--background-accent-pressed);
+  }
+
+  svg {
+    color: var(--white);
+  }
+
+  &:disabled {
+    background: transparent;
+
+    svg {
+      color: var(--icon-disabled);
+    }
+  }
+
+  &--danger {
+    background: var(--background-danger-default);
+
+    &:hover {
+      background: var(--background-danger-hovered);
+    }
+
+    &:active {
+      background: var(--background-danger-pressed);
+    }
+
+    svg {
+      color: var(--white);
+    }
+  }
+}
+
+.rpv-core__page-layer {
+  position: relative;
+}

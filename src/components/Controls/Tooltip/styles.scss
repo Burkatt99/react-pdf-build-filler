@@ -1,0 +1,72 @@
+@import "@/constants/styles.css";
+
+.Tooltip__wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.Tooltip__content {
+  position: absolute;
+  background: var(--background-tooltip-default);
+  color: var(--white);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 9999;
+  white-space: normal;
+  max-width: 320px;
+  box-shadow: var(--shadow-tooltip);
+  display: none;
+  transition: all 0.3s ease;
+
+  &--top {
+    transform: translateX(-30%);
+  }
+
+  &--bottom {
+    transform: translateX(-30%);
+  }
+
+  &--visible {
+    display: block;
+  }
+}
+
+.Tooltip__arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+
+  &--top {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px 5px 0 5px;
+    border-color: var(--border-tooltip) transparent transparent transparent;
+  }
+
+  &--right {
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 5px 5px 5px 0;
+    border-color: transparent var(--border-tooltip) transparent transparent;
+  }
+
+  &--bottom {
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent var(--border-tooltip) transparent;
+  }
+
+  &--left {
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent var(--border-tooltip);
+  }
+}

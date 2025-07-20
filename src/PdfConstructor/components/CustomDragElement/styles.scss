@@ -1,0 +1,50 @@
+@import '@/constants/styles.css';
+
+.CustomDrag__elements {
+  font-size: 16px;
+  white-space: nowrap;
+  font-weight: 400;
+  color: var(--text-primary);
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  background: var(--background-warning-default);
+  box-shadow: var(--shadow-default);
+  overflow: hidden;
+  justify-content: center;
+
+  &--selected {
+    background: var(--background-accent-disabled);
+  }
+
+  &--error {
+    background: var(--background-danger-drop);
+    border: 1px solid var(--border-danger);
+  }
+
+  &--image {
+    white-space: wrap;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  &--check {
+    padding: 0;
+  }
+
+  svg {
+    color: var(--icon-disabled);
+  }
+}
+
+.CustomDrag__dropdown {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}

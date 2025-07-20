@@ -1,0 +1,11 @@
+@import "@/constants/styles.css";
+
+.HighlightedText__container {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.HighlightedText__text {
+  background: var(--background-accent-default);
+}

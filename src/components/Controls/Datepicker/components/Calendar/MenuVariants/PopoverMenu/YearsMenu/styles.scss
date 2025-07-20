@@ -1,0 +1,35 @@
+@import "@/constants/styles.css";
+
+.PopoverMenu__year-container {
+  width: 235px;
+}
+
+.PopoverMenu__month-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  min-height: 40px;
+  padding: 8px 0;
+  color: var(--text-primary);
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.PopoverMenu__year-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+.PopoverMenu__year-buttons-container {
+  display: flex;
+  column-gap: 8px;
+  flex: 0 0 88px;
+}
+
+.PopoverMenu__year-button {
+  color: var(--text-primary);
+}

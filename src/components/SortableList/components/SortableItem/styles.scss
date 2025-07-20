@@ -1,0 +1,27 @@
+@import "@/constants/styles.css";
+
+.SortableItem__content {
+  display: flex;
+  align-items: stretch;
+
+  > div {
+    box-shadow: var(--shadow-default);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    padding: 4px 8px;
+    background: var(--background-neutral-default);
+  }
+
+  svg {
+    color: var(--icon-default);
+    cursor: grab;
+  }
+}
+
+.SortableItem__dragIcon {
+  display: flex;
+  color: var(--icon-default);
+  cursor: grab;
+}

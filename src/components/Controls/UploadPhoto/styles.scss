@@ -1,0 +1,61 @@
+@import "@/constants/styles.css";
+
+.UploadPhoto__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+} 
+
+.UploadPhoto__label {
+  display: flex;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--text-secondary);
+} 
+
+.UploadPhoto__delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+} 
+
+.UploadPhoto__edit-photo {
+  width: 100%;
+} 
+
+.UploadPhoto__buttons {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+} 
+
+.UploadPhoto__error-message {
+  margin-top: 0px;
+  min-height: 16px;
+  font-size: 14px;
+  text-align: start;
+  color: var(--text-danger);
+} 
+
+.UploadPhoto__cropper-container {
+  width: 100%;
+} 
+
+.UploadPhoto__preview {
+  display: flex;
+  justify-content: center;
+  position: relative;
+} 
+
+.UploadPhoto__preview-img {
+  max-width: 150px;
+  max-height: 150px;
+}

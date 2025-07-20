@@ -1,0 +1,15 @@
+.DatepickerInput {
+  min-height: 32px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+  }
+
+  [data-icon-wrapper] {
+    pointer-events: none;
+  }
+}
+

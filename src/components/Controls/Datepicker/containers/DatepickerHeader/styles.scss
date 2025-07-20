@@ -1,0 +1,10 @@
+.Datepicker__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: inherit;
+
+  &:not(:empty) {
+    padding-bottom: 12px;
+  }
+}

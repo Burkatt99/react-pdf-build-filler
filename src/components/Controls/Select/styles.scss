@@ -1,0 +1,159 @@
+@import "@/constants/styles.css";
+
+.Select__custom-option-wrapper {
+  flex: 1 1 auto;
+}
+
+.Select__input {
+  position: relative;
+  min-width: 0;
+  width: 0;
+  flex: 1 1 auto;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text-primary);
+  padding-right: 10px;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+  font-size: 14px;
+
+  &::placeholder {
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+
+    .Select__input--open {
+      color: transparent !important;
+    }
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+  }
+
+  &:disabled,
+  &:disabled::placeholder {
+    cursor: default;
+    color: var(--text-disabled);
+  }
+
+  &--readOnly {
+    cursor: default;
+  }
+}
+
+.Select__input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 5px;
+  border-radius: 4px;
+  padding: 0 5px;
+  background: var(--background-input);
+  cursor: text;
+  transition: all 0.3s ease;
+  min-height: 32px;
+  border: 1px solid var(--border-default);
+
+  &:hover {
+    background: var(--background-input);
+  }
+
+  &--selected {
+    cursor: pointer;
+  }
+
+  &--disabled {
+    cursor: default;
+    background: var(--background-disabled);
+  }
+
+  &--error {
+    border: 1px solid var(--border-danger);
+  }
+}
+
+.Select__arrow-wrapper {
+  flex: 0 0 20px;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: text;
+
+  svg {
+    color: var(--icon-default);
+  }
+
+  &--disabled {
+    cursor: default;
+  }
+}
+
+.Select__flip-container {
+  display: flex;
+  transition: all 0.3s ease;
+
+  &--open {
+    transform: scaleY(-1);
+  }
+}
+
+.Select__dropdown {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.Select__label {
+  display: flex;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  width: fit-content;
+  transition: all 0.3s ease;
+  text-align: start;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &--disabled {
+    color: var(--text-disabled);
+  }
+
+  &--required {
+    &::after {
+      content: "*";
+      font-size: 16px;
+      position: absolute;
+      top: -2px;
+      right: -10px;
+      color: var(--text-accent);
+    }
+  }
+}
+
+.Select__container {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.Select__root {
+  display: flex;
+  row-gap: 4px;
+  flex-direction: column;
+}
+
+.Select__error {
+  font-size: 14px;
+  color: var(--text-danger);
+  min-height: 16px;
+  text-align: start;
+}

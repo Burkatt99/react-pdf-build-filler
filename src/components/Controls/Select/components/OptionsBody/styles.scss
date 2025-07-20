@@ -1,0 +1,118 @@
+@import "@/constants/styles.css";
+
+.Select__options-wrapper {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--border-default);
+  box-shadow:
+    0px 5px 30px -4px rgba(16, 24, 40, 0.15),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.05);
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: var(--background-input);
+  z-index: 1;
+
+  &--portal {
+    position: relative;
+  }
+}
+
+.Select__options-content {
+  height: 100%;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 9px;
+    background: transparent;
+    border-left: 1px solid var(--border-default);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    min-height: 15px;
+    height: 5px;
+    border-width: 2px 2px 2px 3px;
+    border-color: transparent;
+    border-style: solid;
+    background-clip: padding-box;
+    background-color: var(--background-neutral-variant-default);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+.Select__loading-body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 156%;
+  text-align: center;
+  color: var(--text-disabled);
+  min-height: 80px;
+}
+
+.Select__options {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--background-neutral-default);
+}
+
+.Select__option-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.Select__option {
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 6px 44px 6px 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: start;
+
+  &:hover,
+  &--highlighted {
+    background: var(--border-disabled);
+  }
+
+  &--selected {
+    background: var(--white);
+    color: var(--icon-accent);
+  }
+
+  &--disabled {
+    color: var(--text-secondary);
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.Select__check-icon-wrapper {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}

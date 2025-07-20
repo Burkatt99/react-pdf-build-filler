@@ -1,0 +1,33 @@
+@import "@/constants/styles.css";
+
+.CustomLargeField__container {
+  display: flex;
+  transition: all 0.1s ease;
+  z-index: 10;
+  box-shadow: var(--shadow-default);
+  opacity: 0.7;
+
+  &--selected {
+    outline: 1px solid var(--border-hovered);
+  }
+
+  &--dragging {
+    display: none;
+  }
+}
+
+.CustomLargeField__body {
+  cursor: pointer;
+}
+
+.CustomLargeField__dropdown {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}

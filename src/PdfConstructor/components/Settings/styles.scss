@@ -1,0 +1,153 @@
+@import "@/constants/styles.css";
+
+.Settings__container {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px 0 16px;
+  height: inherit;
+}
+
+.Settings__not-found-field {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 145px;
+  margin: auto;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.Settings__title {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+  text-align: start;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.Settings__field-content {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.Settings__tab-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.Settings__error {
+  height: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-danger);
+}
+
+.Settings__dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.Settings__add-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 8px;
+
+  button {
+    margin-bottom: 16px;
+  }
+}
+
+.Settings__sort-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  padding: 4px 8px;
+  background: var(--background-neutral-default);
+
+  svg {
+    color: var(--icon-default);
+    cursor: grab;
+  }
+}
+
+.Settings__sort-content {
+  background: var(--background-list);
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.Settings__sort-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 165px;
+  border-radius: 8px;
+
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border-radius: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    min-height: 64px;
+    height: 4px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    background-clip: padding-box;
+    background-color: var(--background-neutral-variant-default);
+    border-radius: 2px;
+  }
+
+  &::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+.Settings__item-buttons {
+  max-width: calc(100% - 28px);
+  display: flex;
+  margin-left: auto;
+  z-index: 3;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  gap: 4px;
+}
+
+.Settings__option-button {
+  transition: 0.3s;
+}
+
+.Settings__dropdown-input {
+  width: calc(100% - 40px);
+}
+
+.Settings__item-input {
+  height: 24px !important;
+}

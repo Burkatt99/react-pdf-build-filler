@@ -1,0 +1,19 @@
+@import "@/constants/styles.css";
+
+.Preview__block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  margin-top: auto;
+}
+
+.Preview__field-wrapper {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-default);
+};
+
+.Preview__checkbox {
+  margin-bottom: 0;
+}

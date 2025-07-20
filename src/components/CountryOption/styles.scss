@@ -1,0 +1,18 @@
+@import "@/constants/styles.css";
+
+.CountryOption__value-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.CountryOption__name {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &--disabled {
+    color: var(--text-disabled);
+  }
+}

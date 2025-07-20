@@ -1,0 +1,29 @@
+@import "@/constants/styles.css";
+
+.Datepicker__container {
+  max-height: 633px;
+  max-width: 660px;
+  padding: 16px;
+}
+
+.Datepicker__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:empty) {
+    margin-top: 16px;
+  }
+}
+
+.Datepicker__tooltip {
+  background: var(--background-neutral-default);
+}
+
+.Datepicker__arrow {
+  border-color: var(--background-neutral-default) transparent transparent transparent;
+}
+
+.Datepicker__tooltip-wrapper {
+  width: 100%;
+}

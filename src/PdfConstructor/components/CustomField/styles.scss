@@ -1,0 +1,53 @@
+@import "@/constants/styles.css";
+
+.CustomField__container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border-default);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 6px 0 6px 8px;
+  box-shadow: var(--shadow-default);
+  width: 200px;
+}
+
+.CustomField__iconBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: var(--icon-disabled);
+  }
+
+  &--big {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.CustomField__name {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.CustomField__drag-icon {
+  margin-left: auto;
+  cursor: grab;
+  display: flex;
+  color: var(--icon-disabled);
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}

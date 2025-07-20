@@ -1,0 +1,53 @@
+@import "@/constants/styles.css";
+
+.Signature__field {
+  width: 100%;
+
+  canvas {
+    height: 150px;
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    width: calc(100% - 2px);
+  }
+
+  &--error {
+    canvas {
+      border: 1px solid var(--border-danger);
+    }
+  }
+
+  &--touched {
+    canvas {
+      background: transparent;
+    }
+  }
+}
+
+.Signature__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Signature__label {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.Signature__clear {
+  position: absolute !important;
+  right: 2px;
+  top: 26px;
+}
+
+.Signature__error {
+  margin-top: 0px;
+  min-height: 16px;
+  font-size: 14px;
+  text-align: start;
+  color: var(--text-danger);
+}

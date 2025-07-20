@@ -1,0 +1,73 @@
+@import "@/constants/styles.css";
+
+.Tabs__container {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--border-default);
+  margin-bottom: 16px;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.Tabs__root {
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  flex: 1 1 auto;
+  min-height: 40px;
+}
+
+.Tabs__scroll-button {
+  flex: 0 0 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 40px;
+
+  &:disabled {
+    color: var(--text-disabled);
+  }
+
+  &:active,
+  &:hover:not(:disabled) {
+    background-color: var(--background-neutral-variant-default);
+  }
+
+  svg {
+    height: 10px;
+    width: 7px;
+  }
+}
+
+.Tabs__scrollable {
+  width: 99px;
+  height: 99px;
+  position: absolute;
+  top: -9999px;
+  overflow: auto hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.Tabs__scroller-wrap {
+  position: relative;
+  display: inline-block;
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: auto hidden;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.Tabs__tab-list {
+  display: flex;
+  gap: 12px;
+}
+
